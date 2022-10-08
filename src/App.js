@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { QrReader } from "@blackbox-vision/react-qr-reader";
 
-function App() {
+export default function App() {
+  const [on, toggle] = useState(true);
+  const [data, setData] = useState("NULL");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <button onClick={() => toggle(!on)} style={{ marginBottom: 16 }}>
+        {on ? "Unmount QR Reader" : "Mount QR Reader"}
+      </button>
+      {on && (
+        <QrReader
+          resolution={600}
+          facingMode="environment"
+          onScan={decoded => setData(decoded)}
+          onError={err => console.info(err)}
+        />
+      )}
+      <div>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          El valor del QR es:{" "}
+          {typeof data === "object" ? JSON.stringify(data) : data}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
     </div>
   );
 }
-
-export default App;
