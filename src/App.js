@@ -3,6 +3,8 @@ import logo from "./imgs/logo.png"
 import Cards from "./components/Cards";
 import Map from "./components/Map/Map"
 import Button from 'react-bootstrap/Button';
+import bog from "./imgs/bog.png";
+import numbers from "./imgs/numbers.png";
 
 
 
@@ -11,8 +13,11 @@ function App() {
   return (
     <div className="App">
       <img src={logo} alt="Logo" />
-      <div className="fs-1">
-      <h2>Explore the city & scan the mural</h2>
+      <div classname="fs-2 text-uppercase text-light">
+        <h4>Immortalizing street art on the blockchain</h4>
+      </div>
+      <div className="fs-1 text-uppercase text-light">
+      <h1>Explore the city & scan the mural</h1>
       </div>
       <div className="mb-2">
         <Button variant="primary" size="lg">
@@ -20,7 +25,16 @@ function App() {
         </Button>{' '}
         </div>
       <Cards />
-      
+      <Button variant="primary" size="lg">
+          How it works
+        </Button>{' '}
+        <div className>
+        <img src={numbers} class="img-fluid" alt="numbers" />
+        </div>
+        <div>
+        <img src={bog} class="img-fluid" alt="Logo" />
+        </div>
+        
       <Map/>
     </div>
   );

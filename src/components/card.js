@@ -5,7 +5,7 @@ import "./card.css";
 
 function Card({ imageSource, title, text, url }) {
   return (
-    <div className="card text-center bg-dark animate__animated animate__fadeInUp">
+    <div className="card text-center d-grid gap-3 bg-dark animate__animated animate__fadeInUp">
       <div className="overflow">
         <img src={imageSource} alt="a wallpaper" className="card-img-top" />
       </div>

@@ -20,13 +20,9 @@
 }
 
 
-body {background-color: black;}
+body {background-color: #1e171f;}
 
-.lg-txt{
-  color: green;
-  font-size: larger;
 
-}
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
   background-color: #9e21fe !important;
