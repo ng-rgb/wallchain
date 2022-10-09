@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+// import Card from "./Cads/cardUI";
+// ReactDOM.render(<Card/>,document.getElementById("root"))
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
