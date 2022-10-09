@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <img src={logo} alt="Logo" />
-      <div classname="fs-2 text-uppercase text-light">
+      <div className="fs-2 text-uppercase text-light">
         <h4>Immortalizing street art on the blockchain</h4>
       </div>
       <div className="fs-1 text-uppercase text-light">
@@ -28,13 +28,8 @@ function App() {
       <Button variant="primary" size="lg">
           How it works
         </Button>{' '}
-        <div className>
-        <img src={numbers} class="img-fluid" alt="numbers" />
-        </div>
-        <div>
-        <img src={bog} class="img-fluid" alt="Logo" />
-        </div>
-        
+        <img src={numbers} className="img-fluid" alt="numbers" />
+        <img src={bog} className="img-fluid" alt="Logo" />
       <Map/>
     </div>
   );

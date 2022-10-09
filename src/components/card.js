@@ -14,12 +14,12 @@ function Card({ imageSource, title, text, url }) {
         <p className="card-text text-secondary">
           {text
             ? text
-            : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt fuga accusantium excepturi quia, voluptates obcaecati nam in voluptas perferendis velit harum dignissimos quasi ex? Tempore repellat quo doloribus magnam."}
+            : "Cryptomurals is a blockchain-based platform focused on promoting and preserving the best street art worldwide, making it accessible as a public good.Our mission is to preserve the cultural heritage with interactive web3 dApps and bring artists and active citizens together to build inclusive environments in public spaces."}
         </p>
         <a
           href={url ? url : "#!"}
           target="_blank"
-          className="btn btn-outline-secondary border-0"
+          className="btn btn-outline-secondary border-30"
           rel="noreferrer"
         >
           Go to {title}

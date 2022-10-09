@@ -19,12 +19,14 @@
   color: black;
 }
 
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #9e21fe !important;
+}
 
 body {background-color: #1e171f;}
 
 
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-  background-color: #9e21fe !important;
-}
+
+
 

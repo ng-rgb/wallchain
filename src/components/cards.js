@@ -8,19 +8,19 @@ import image3 from '../imgs/noun_3.jpg'
 const cards = [
   {
     id: 1,
-    title: "Fazt Web",
+    title: "Noun 1",
     image: image1,
     url: "https://imgur.com/a/DEr9ZEH",
   },
   {
     id: 2,
-    title: "Fazt Blog",
+    title: "Noun 2",
     image: image2,
     url: "https://imgur.com/zw3iucj",
   },
   {
     id: 3,
-    title: "Fazt Youtube",
+    title: "Noun 3",
     image: image3,
     url: "https://imgur.com/zw3iucj",
   },
