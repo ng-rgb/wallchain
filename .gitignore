@@ -22,3 +22,14 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+# Hardhat 
+./erc1155_Factory/node_modules
+./erc1155_Factory/.env
+./erc1155_Factory/coverage
+./erc1155_Factory/coverage.json
+./erc1155_Factory/typechain
+./erc1155_Factory/typechain-types
+./erc1155_Factory/cache
+./erc1155_Factory/artifacts
