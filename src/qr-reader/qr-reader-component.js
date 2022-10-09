@@ -4,7 +4,7 @@ import QrReader from "react-qr-scanner";
 class QRScan extends React.Component {
   state = {
     delay: 100,
-    result: "No result"
+    result: ""
   };
 
   handleScan = (data) => {
